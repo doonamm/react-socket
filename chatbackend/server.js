@@ -7,7 +7,7 @@ const {get_current_user, user_disconnect, join_user} = require('./dummyuser');
 
 app.use(express());
 
-const port = 8888;
+const port = process.env.PORT || 8888;
 
 app.use(cors());
 
